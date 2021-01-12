@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 450px;
+  position: relative;
+  // outline-style: solid;
+  // outline-width: thin;
+  // outline-color: black;
+  background-image: url('https://images.pexels.com/photos/2387931/pexels-photo-2387931.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-size: cover;
+  background-position: 20% 40%;
+
+  .liveSearch {
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    z-index: 1;
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    // outline-style: solid;
+    // outline-width: thin;
+    // outline-color: black;
+
+    #inputMain {
+      // outline-style: solid;
+      // outline-width: thin;
+      // outline-color: black;
+      border-radius: 10px;
+      width: 250px;
+      height: 40px;
+      background-color: white;
+
+      input {
+        width: 90%;
+        height: 100%;
+        outline: none;
+        border-style: none;
+        border-radius: 10px;
+        font-size: 20px;
+        padding-left: 13px;
+        :focus {
+          outline: none;
+        }
+      }
+    }
+  }
+
+  button {
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    border-style: none;
+    outline: none;
+    cursor: pointer;
+
+    i {
+      color: white;
+    }
+  }
+
+  .title {
+    position: absolute;
+    z-index: 2;
+    // outline-style: solid;
+    // outline-width: thin;
+    // outline-color: black;
+    // background-color: lightcoral;
+    top: 220px;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    .linkMain {
+      // outline-style: solid;
+      // outline-width: thin;
+      // outline-color: black;
+      height: max-content;
+      width: 200px;
+      background-color: white;
+      overflow-y: scroll;
+
+      .sublink {
+        padding: 5px;
+
+        #link {
+          font-size: 20px;
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
+  }
+
+  img {
+    width: 80px;
+    height: 80px;
+    margin-top: 20px;
+    margin-left: 60px;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  header {
+    .liveSearch {
+      #inputMain {
+        flex-grow: 0.3;
+      }
+    }
+
+    .title {
+      .linkMain {
+        flex-grow: 0.3;
+      }
+    }
+  }
+}

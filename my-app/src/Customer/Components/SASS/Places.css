@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+#title {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  font-size: 30px;
+  font-weight: 300;
+  margin: 20px;
+}
+
+.section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.section #child {
+  margin: 50px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 80px;
+  position: relative;
+}
+
+.section #child img {
+  height: 100%;
+  width: 85px;
+  border-radius: 9px;
+}
+
+.section #child #location {
+  position: relative;
+  bottom: 35px;
+  text-decoration: none;
+  color: lightseagreen;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .section {
+    overflow-x: scroll;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .section #child #location {
+    position: static;
+  }
+}
+/*# sourceMappingURL=Places.css.map */
